@@ -1,12 +1,10 @@
+
 import { GoogleGenAI } from "@google/genai";
 
-// Per Gemini API guidelines, the API key must be accessed via process.env.API_KEY.
-// This is enabled by the `define` property in `vite.config.ts`.
 const API_KEY = process.env.API_KEY;
 
 if (!API_KEY) {
-  // This error will be shown in the browser's console if the variable is not set.
-  throw new Error("API_KEY environment variable not set. Please set it in your deployment settings.");
+  throw new Error("API_KEY environment variable not set");
 }
 
 const ai = new GoogleGenAI({ apiKey: API_KEY });
