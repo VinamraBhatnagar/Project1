@@ -1,0 +1,5 @@
+{
+  "name": "StickerVerse AI",
+  "description": "A dynamic web application to upload, share, and generate AI-powered stickers. The background changes based on the time of day, and users can generate unique stickers by specifying a style and mood.",
+  "requestFramePermissions": []
+}
